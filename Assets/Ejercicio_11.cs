@@ -15,6 +15,7 @@ public class Ejercicio_11 : MonoBehaviour
     //Precio Unitario: $xxx
     //Total a Pagar: $xxxxx
 
+    public string FechaDeIngreso;
     public string NombreDelComprador;
     public string Producto;
     public int Cantidad;
@@ -23,8 +24,8 @@ public class Ejercicio_11 : MonoBehaviour
     void Start()
     {
         int Total_a_Pagar = Cantidad * PrecioPorUnidad;
-        
 
+        Debug.Log("Fecha de Compra: " +FechaDeIngreso+ ".\nNombre del comprador: " +NombreDelComprador+ ".\nProducto solicitado: " +Producto+ ".\nCantidad solicitada: " + Cantidad+ ".\nPrecio por unidad: " + PrecioPorUnidad+ ".\nTotal a pagar: " + Total_a_Pagar);
 
     }
 
