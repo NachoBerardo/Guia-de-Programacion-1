@@ -17,32 +17,28 @@ public class Ejercicio_12 : MonoBehaviour
 
     void Start()
     {
-        if (num1 >= 1 && num1 <= 6 && num2 >= 1 && num3 <= 6 && num3 >= 1 && num3 <= 6)
+        
+        
+
+
+        if (num1 == 6 && num2 == 6 && num3 == 6)
         {
-            if (num1 == 6 && num2 == 6 && num3 == 6)
-            {
-                Debug.Log("Exclente");
-            }
-
-            else if (num1 == 6 && num2 == 6 || num1 == 6 && num3 == 6 || num2 == 6 && num2 == 6)
-            {
-                Debug.Log("Muy bien");
-            }
-
-            else if (num1 == 6 || num3 == 6 || num2 == 6)
-            {
-                Debug.Log("Regular");
-            }
-
-            else if (num1 != 6 && num3 != 6 && num2 != 6)
-            {
-                Debug.Log("Insuficiente");
-            }
+            Debug.Log("Exclente");
         }
 
-        else
+        else if (num1 == 6 && num2 == 6 || num1 == 6 && num3 == 6 || num2 == 6 && num2 == 6)
         {
-            Debug.Log("Ingresar un valor entre 1 o 6");
+            Debug.Log("Muy bien");
+        }
+
+        else if (num1 == 6 || num3 == 6 || num2 == 6)
+        {
+            Debug.Log("Regular");
+        }
+
+        else if (num1 != 6 && num3 != 6 && num2 != 6)
+        {
+            Debug.Log("Insuficiente");
         }
 
     }
