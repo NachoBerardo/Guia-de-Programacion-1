@@ -13,17 +13,23 @@ public class Ejercicio_13 : MonoBehaviour
 
     void Start()
     {
-        int Cuarenta_Horas_Menos = 16;
-        int HorasExtras = 20;
+        int Pago = 16;
+        int PagoExtra = 20;
 
-        if (horas <= 40)
+        if (horas <= 0)
         {
-            Debug.Log("El salario correspondiente es " + (horas * Cuarenta_Horas_Menos));
+            Debug.Log("Ingrese un valor adecuado");
+        }
+
+        else if (horas <= 40 && horas > 0)
+        {
+            Debug.Log("El salario correspondiente es " + (horas * Pago));
         }
 
         else if (horas > 40)
         {
-            Debug.Log("El salario correspondiente es " + (horas * Cuarenta_Horas_Menos));
+            int horasExtras = horas - 40;
+            Debug.Log("El salario correspondiente es " + ((40 * Pago) + (horasExtras*PagoExtra)));
         }
     }
 

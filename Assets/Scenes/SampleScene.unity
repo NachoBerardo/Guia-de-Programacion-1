@@ -253,6 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 486571788}
+  - component: {fileID: 486571789}
   m_Layer: 0
   m_Name: Ejercicio_13
   m_TagString: Untagged
@@ -274,6 +275,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486571789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486571787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250e84043c7d77418abe4997a91a638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horas: 41
 --- !u!1 &820761167
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,9 +362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42de88b5197bdd4418735b6b7e3f4a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num1: 2
-  num2: 2
-  num3: 2
+  num1: 6
+  num2: 6
+  num3: 6
 --- !u!4 &899615299
 Transform:
   m_ObjectHideFlags: 0

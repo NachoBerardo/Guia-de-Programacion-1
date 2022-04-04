@@ -17,28 +17,40 @@ public class Ejercicio_12 : MonoBehaviour
 
     void Start()
     {
-        
-        
+        int suma = 0;
 
-
-        if (num1 == 6 && num2 == 6 && num3 == 6)
+        if (num1 == 6)
         {
-            Debug.Log("Exclente");
+            suma = suma + 1;
         }
 
-        else if (num1 == 6 && num2 == 6 || num1 == 6 && num3 == 6 || num2 == 6 && num2 == 6)
+        if (num2 == 6)
         {
-            Debug.Log("Muy bien");
+            suma = suma + 1;
         }
 
-        else if (num1 == 6 || num3 == 6 || num2 == 6)
+        if (num3 == 6)
         {
-            Debug.Log("Regular");
+            suma = suma + 1;
         }
 
-        else if (num1 != 6 && num3 != 6 && num2 != 6)
+        switch (suma)
         {
-            Debug.Log("Insuficiente");
+            case 0:
+                Debug.Log("Insuficiente");
+                break;
+
+            case 1:
+                Debug.Log("Regular");
+                break;
+
+            case 2:
+                Debug.Log("Muy bien");
+                break;
+
+            case 3:
+                Debug.Log("Excelente");
+                break;
         }
 
     }
